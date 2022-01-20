@@ -10,7 +10,7 @@
 
 class IsPalindrome {
 public:
-	bool isPlaindrome(int x);
+	bool isPalindrome(int x);
 };
 
 #endif /* ISPALINDROME_H_ */

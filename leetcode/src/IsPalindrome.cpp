@@ -10,7 +10,7 @@
 #include <string>
 using namespace std;
 
-class IsPalindrome{
+IsPalindrome::IsPalindrome {
 public:
 	bool isPalindrome(int x){
 		string a = to_string(x);
