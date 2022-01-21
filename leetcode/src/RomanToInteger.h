@@ -7,11 +7,12 @@
 
 #ifndef ROMANTOINTEGER_H_
 #define ROMANTOINTEGER_H_
+#include <string>
 
 class RomanToInteger {
 public:
 	RomanToInteger();
-	int romanToInt(String roman);
+	int romanToInt(std::string roman);
 };
 
 #endif /* ROMANTOINTEGER_H_ */

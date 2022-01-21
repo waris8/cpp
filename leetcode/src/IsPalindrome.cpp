@@ -8,11 +8,13 @@
 #include "IsPalindrome.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
 
-IsPalindrome::IsPalindrome {
+IsPalindrome::IsPalindrome() {
+
 public:
-	bool isPalindrome(int x){
+	bool isPalin(int x){
 		string a = to_string(x);
 		int temp = 0;
 		while(temp < a.size()/2){

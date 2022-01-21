@@ -14,7 +14,8 @@ using namespace std;
 
 RomanToInteger::RomanToInteger() {
 	// TODO Auto-generated constructor stub
-	int romanToInt(String roman){
+public:
+	int romanToInt(String roman) {
 		unordered_map<char, int> umap;
 		umap['I']=1;
 		umap['V']=5;
@@ -24,7 +25,14 @@ RomanToInteger::RomanToInteger() {
 		umap['D']=500;
 		umap['M']=1000;
 
-
+		int output = umap[roman[0]];
+		for(int i=1;i<sizeOf(roman);i++) {
+			if(umap[i]>umap[i-1]){
+				output = umap[i]-output;
+			}
+			else{
+				output =output + umap[i];
+			}
 		}
 	}
 }

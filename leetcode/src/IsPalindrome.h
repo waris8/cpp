@@ -8,9 +8,11 @@
 #ifndef ISPALINDROME_H_
 #define ISPALINDROME_H_
 
+
 class IsPalindrome {
 public:
-	bool isPalindrome(int x);
+	IsPalindrome();
+	bool isPalin(int x);
 };
 
 #endif /* ISPALINDROME_H_ */
