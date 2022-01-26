@@ -34,6 +34,7 @@ public:
 				output =output + umap[i];
 			}
 		}
+		return output;
 	}
 }
 
