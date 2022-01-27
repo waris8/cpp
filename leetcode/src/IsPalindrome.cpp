@@ -11,9 +11,8 @@
 
 using namespace std;
 
-IsPalindrome::IsPalindrome() {
+IsPalindrome::IsPalindrome {
 
-public:
 	bool isPalin(int x){
 		string a = to_string(x);
 		int temp = 0;
