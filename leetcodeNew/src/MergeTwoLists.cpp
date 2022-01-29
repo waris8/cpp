@@ -14,14 +14,8 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     ListNode* temp1 = list1;
     ListNode* temp2 = list2;
     int count = 0;
-    while(temp1 != nullptr || temp2 != nullptr){
+    while(temp1 != nullptr && temp2 != nullptr){
         ListNode temp;
-        if(count == 0){
-            outputHead = &temp;
-            outputPtr = outputHead;
-            }
-        outputPtr->next = &temp;
-        outputPtr = outputPtr->next;
         if(temp1->val > temp2->val){
             temp.val = temp2->val;                
             temp2 = temp2->next;
@@ -30,6 +24,15 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
             temp.val = temp1->val;
             temp1 = temp1->next;
         }
+        if(count == 0){
+            outputHead = &temp;
+            outputPtr = outputHead;
+            }
+        else{
+            outputPtr->next = &temp;
+            outputPtr = outputPtr->next;
+        }
+        ++count;
     }
     ListNode* remaining;
     if(temp1 == nullptr){
@@ -40,6 +43,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     }
     while(remaining != nullptr){
         outputPtr->next = remaining;
+        outputPtr = outputPtr->next;
         remaining = remaining->next;
     }
     return outputHead;
