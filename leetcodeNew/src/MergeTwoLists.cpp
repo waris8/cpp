@@ -26,7 +26,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         }
         if(count == 0){
             outputHead = &temp;
-            outputPtr = outputHead;
+            outputPtr = &temp;
             }
         else{
             outputPtr->next = &temp;
@@ -52,6 +52,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
 int main(){
     std::cout << "linked lists are so fun" << std::endl;
     ListNode n1(1);
+    ListNode n6(1);
     ListNode n2(2);
     ListNode n3(3);
     ListNode n4(4);
@@ -59,7 +60,7 @@ int main(){
     ListNode* l1 = &n1;
     l1->next = &n2;
     l1->next->next = &n4;
-    ListNode* l2 = &n1;
+    ListNode* l2 = &n6;
     l2->next = &n3;
     l2->next->next = &n5;
     ListNode* result = mergeTwoLists(l1,l2);
