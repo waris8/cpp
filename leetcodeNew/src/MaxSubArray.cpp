@@ -8,5 +8,6 @@ int maxSubArray(vector<int>& nums) {
 }
 
 int main(){
+    cout << "welcome" << endl;
     return 0;
 }
