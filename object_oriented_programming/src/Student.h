@@ -10,7 +10,3 @@ class Student : public Person{
     void print();
     void changeMajor(const std::string& newMajor);
 };
-
-int main(){
-    return 0;
-}
