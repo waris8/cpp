@@ -11,8 +11,8 @@
 using namespace std;
 
 int main() {
-	IsPalindrome p;
+//	IsPalindrome p;
 	cout << true << endl; // prints !!!Hello World!!!
-	cout << p.isPalindrome(67) << endl;
+//	cout << p.isPalindrome(67) << endl;
 	return 0;
 }
