@@ -22,6 +22,7 @@ int main(){
                 if(k%(j+1)==0 && temp<n){
                     cout << k << " " ;
                     temp++;
+                    break;
                 }
             }
         }
