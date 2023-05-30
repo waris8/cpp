@@ -2,6 +2,12 @@
     "files.associations": {
         "ostream": "cpp",
         "map": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "thread": "cpp",
+        "*.tcc": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "valarray": "cpp",
+        "random": "cpp"
     }
 }
